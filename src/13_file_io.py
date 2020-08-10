@@ -11,9 +11,21 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 
 # YOUR CODE HERE
 
+file = open('foo.txt', 'r')
+
+print(file.read())
+
 # Open up a file called "bar.txt" (which doesn't exist yet) for
 # writing. Write three lines of arbitrary content to that file,
 # then close the file. Open up "bar.txt" and inspect it to make
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
+multiline_str = """It's a beautiful day in the neighborhood
+a wonderful day in the neighborhood, wont you be mine """
+
+file = open('bars.txt', 'w')
+file.write(multiline_str)
+file.write('and this is another line. ')
+file.write('Why? Because we can.')
+file.close()
