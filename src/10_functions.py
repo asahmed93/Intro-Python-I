@@ -3,14 +3,14 @@
 # YOUR CODE HERE
 
 def is_even(n):  # <--- Function
-    if n % 2 is 0:
+    if n % 2 == 0:
         return print(f'{n} is Even')
     else:
         return print(f'{n} is Odd')
 
 
 # Read a number from the keyboard
-num = input("4")
+num = input("Enter a number:")
 num = int(num)
 
 # Print out "Even!" if the number is even. Otherwise print "Odd"
